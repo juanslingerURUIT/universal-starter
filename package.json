@@ -12,6 +12,22 @@
 		"serve:ssr": "yarn run build:ssr && node dist/server"
 	},
 	"private": true,
-	"dependencies": {},
+	"dependencies": {
+		"@angular/animations": "7.1.4",
+		"@angular/common": "7.1.4",
+		"@angular/compiler": "7.1.4",
+		"@angular/core": "7.1.4",
+		"@angular/http": "7.1.4",
+		"@angular/platform-browser": "7.1.4",
+		"@angular/platform-browser-dynamic": "7.1.4",
+		"@angular/platform-server": "7.1.4",
+		"@angular/router": "7.1.4",
+		"@nguniversal/common": "^6.0.0",
+		"@nguniversal/express-engine": "^6.0.0",
+		"@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+		"express": "^4.15.2",
+		"rxjs": "6.3.3",
+		"zone.js": "^0.8.26"
+	},
 	"devDependencies": {}
 }

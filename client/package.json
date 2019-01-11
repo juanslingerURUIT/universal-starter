@@ -20,28 +20,13 @@
 		"start": "ng serve",
 		"build": "ng build",
 		"lint": "ng lint ng-universal-demo",
-		"web-build:ssr": "yarn run build --prod"
+		"web-build:ssr": "yarn run build --prod && ng run ng-universal-demo:server:production"
 	},
 	"private": true,
 	"dependencies": {
-		"@angular/animations": "7.1.4",
-		"@angular/common": "7.1.4",
-		"@angular/compiler": "7.1.4",
-		"@angular/core": "7.1.4",
 		"@angular/forms": "7.1.4",
-		"@angular/http": "7.1.4",
-		"@angular/platform-browser": "7.1.4",
-		"@angular/platform-browser-dynamic": "7.1.4",
-		"@angular/platform-server": "7.1.4",
-		"@angular/router": "7.1.4",
-		"@nguniversal/common": "^6.0.0",
-		"@nguniversal/express-engine": "^6.0.0",
-		"@nguniversal/module-map-ngfactory-loader": "^6.0.0",
 		"core-js": "^2.4.1",
-		"express": "^4.15.2",
-		"reflect-metadata": "^0.1.10",
-		"rxjs": "6.3.3",
-		"zone.js": "^0.8.26"
+		"reflect-metadata": "^0.1.10"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "0.11.4",
