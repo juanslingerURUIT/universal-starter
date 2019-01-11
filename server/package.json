@@ -1,0 +1,32 @@
+{
+	"name": "server-angular-universal",
+	"version": "0.0.0",
+	"license": "MIT",
+	"contributors": [],
+	"scripts": {
+		"build:ssr": "yarn run compile:server",
+		"compile:server": "tsc -p tsconfig.json",
+		"generate:prerender": "cd dist && node prerender",
+		"serve:ssr": "node dist/server"
+	},
+	"private": true,
+	"dependencies": {
+		"@angular/core": "7.1.4",
+		"@nguniversal/common": "^6.0.0",
+		"@nguniversal/express-engine": "^6.0.0",
+		"@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+		"core-js": "^2.4.1",
+		"express": "^4.15.2",
+		"reflect-metadata": "^0.1.10",
+		"rxjs": "6.3.3",
+		"zone.js": "^0.8.26"
+	},
+	"devDependencies": {
+		"@types/node": "^8.0.30",
+		"codelyzer": "^4.0.2",
+		"pre-commit": "^1.2.2",
+		"ts-loader": "^4.2.0",
+		"tslint": "^5.7.0",
+		"typescript": "3.1.6"
+	}
+}

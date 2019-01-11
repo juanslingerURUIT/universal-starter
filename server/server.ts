@@ -23,10 +23,10 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./server/main');
 
 // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
 app.engine('html', ngExpressEngine({
-  bootstrap: AppServerModuleNgFactory,
-  providers: [
-    provideModuleMap(LAZY_MODULE_MAP)
-  ]
+	bootstrap: AppServerModuleNgFactory,
+	providers: [
+		provideModuleMap(LAZY_MODULE_MAP)
+	]
 }));
 
 app.set('view engine', 'html');
@@ -37,15 +37,15 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 
 // Server static files from /browser
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser'), {
-  maxAge: '1y'
+	maxAge: '1y'
 }));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
-  res.render('index', { req });
+	res.render('index', { req });
 });
 
 // Start up the Node server
 app.listen(PORT, () => {
-  console.log(`Node Express server listening on http://localhost:${PORT}`);
+	console.log(`Node Express server listening on http://localhost:${PORT}`);
 });

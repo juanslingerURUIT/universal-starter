@@ -1,0 +1,11 @@
+/node_modules/
+
+package-lock.json
+yarn.lock
+
+# Angular #
+*.ngfactory.ts
+*.css.shim.ts
+*.ngsummary.json
+*.metadata.json
+*.shim.ngstyle.ts

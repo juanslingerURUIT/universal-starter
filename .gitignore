@@ -3,6 +3,7 @@
 .vscode
 
 package-lock.json
+yarn.lock
 
 # Built #
 /__build__/
@@ -20,10 +21,3 @@ package-lock.json
 
 # Webpack #
 webpack.records.json
-
-# Angular #
-*.ngfactory.ts
-*.css.shim.ts
-*.ngsummary.json
-*.metadata.json
-*.shim.ngstyle.ts
